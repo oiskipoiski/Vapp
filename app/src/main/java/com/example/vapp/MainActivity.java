@@ -9,6 +9,8 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 import com.google.android.material.navigation.NavigationView;
 
@@ -33,6 +35,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
+        //wire up the button
+        //get the button, what happens when clicked
         //starten met activity --> home openen
         if(savedInstanceState == null) { //enkel dit fragment tonen als opnieuw opgestart, niet als even gekilled en dan weer opstarten door device zelf
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
@@ -79,4 +83,5 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             super.onBackPressed();
         }
     }
+
 }

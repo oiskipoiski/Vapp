@@ -10,4 +10,6 @@
     <string name="settings_message">Settings</string>
     <string name="graph_message">Graph</string>
     <string name="numbers_message">Numbers</string>
+    <string name="Graph_button">Graph</string>
+    <string name="Statistics_button">Statistics</string>
 </resources>

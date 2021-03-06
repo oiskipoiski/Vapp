@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph"
+    app:startDestination="@id/numbersFragment">
+
+    <fragment
+        android:id="@+id/numbersFragment"
+        android:name="com.example.vapp.NumbersFragment"
+        android:label="NumbersFragment" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.vapp.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_numbersFragment"
+            app:destination="@id/numbersFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_graphFragment"
+            app:destination="@id/graphFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/graphFragment"
+        android:name="com.example.vapp.GraphFragment"
+        android:label="GraphFragment" />
+</navigation>
